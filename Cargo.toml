@@ -4,4 +4,4 @@ members = ["src/net", "src/server"]
 [workspace.dependencies]
 barrel-net = { path = "src/net" }
 barrel-server = { path = "src/server" }
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.43.0", features = ["full"] }
