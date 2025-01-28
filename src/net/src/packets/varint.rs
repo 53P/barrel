@@ -26,10 +26,7 @@ pub async fn decode_varint(cursor: &mut Cursor<Vec<u8>>) -> Result<i32, String> 
 #[cfg(test)]
 mod tests {
     use super::*;
-    use std::io::Cursor as IoCursor;
     use std::io::Cursor;
-    use std::io::Read;
-    use std::vec::Vec;
 
     #[tokio::test]
     async fn test_decode_varint() {
